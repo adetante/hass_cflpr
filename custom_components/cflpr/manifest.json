@@ -1,0 +1,15 @@
+{
+  "version": "1",
+  "domain": "cflpr",
+  "name": "CFL P+R",
+  "codeowners": ["@adetante"],
+  "config_flow": true,
+  "dependencies": [],
+  "documentation": "https://www.home-assistant.io/integrations/cflpr",
+  "homekit": {},
+  "iot_class": "cloud_polling",
+  "quality_scale": "bronze",
+  "requirements": ["cflpr>=0.0.1"],
+  "ssdp": [],
+  "zeroconf": []
+}

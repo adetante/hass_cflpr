@@ -1,0 +1,47 @@
+{
+  "config": {
+    "abort": {
+      "already_configured": "Device is already configured",
+      "reauth_successful": "Successfully re-authenticated"
+    },
+    "error": {
+      "cannot_connect": "Failed to connect",
+      "invalid_auth": "Invalid authentication",
+      "unknown": "Unexpected error"
+    },
+    "step": {
+      "user": {
+        "data": {
+          "password": "Password",
+          "email": "Email"
+        }
+      },
+      "prs": {
+        "data": {
+          "prs": "Selected P+R"
+        }
+      },
+      "reauth_confirm": {
+        "description": "The CRL P+R integration needs to re-authenticate your account.",
+        "title": "Authentication expired"
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "filling_rate": {
+        "name": "Filling Rate",
+        "state_attributes": {
+          "free_spaces": { "name": "Free spaces" },
+          "free_electric_spaces": { "name": "Free EV spaces" },
+          "free_pmr_spaces": { "name": "Free PMR spaces" }
+        }
+      }
+    },
+    "binary_sensor": {
+      "subscription_availability": {
+        "name": "Subscription availability"
+      }
+    }
+  }
+}

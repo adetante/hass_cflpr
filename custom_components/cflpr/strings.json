@@ -1,0 +1,47 @@
+{
+  "config": {
+    "abort": {
+      "already_configured": "Device is already configured",
+      "reauth_successful": "Successfully re-authenticated"
+    },
+    "step": {
+      "user": {
+        "data": {
+          "email": "[%key:common::config_flow::data::email%]",
+          "password": "[%key:common::config_flow::data::password%]"
+        }
+      },
+      "prs": {
+        "data": {
+          "prs": "Selected P+R"
+        }
+      },
+      "reauth_confirm": {
+        "description": "The CRL P+R integration needs to re-authenticate your account.",
+        "title": "Authentication expired"
+      }
+    },
+    "error": {
+      "cannot_connect": "[%key:common::config_flow::error::cannot_connect%]",
+      "invalid_auth": "[%key:common::config_flow::error::invalid_auth%]",
+      "unknown": "[%key:common::config_flow::error::unknown%]"
+    }
+  },
+  "entity": {
+    "sensor": {
+      "filling_rate": {
+        "name": "Filling Rate",
+        "state_attributes": {
+          "free_spaces": { "name": "Free spaces" },
+          "free_electric_spaces": { "name": "Free EV spaces" },
+          "free_pmr_spaces": { "name": "Free PMR spaces" }
+        }
+      }
+    },
+    "binary_sensor": {
+      "subscription_availability": {
+        "name": "Subscription availability"
+      }
+    }
+  }
+}
